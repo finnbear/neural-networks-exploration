@@ -34,10 +34,13 @@ public class Main extends JFrame {
 		super("Neural Network Visualizer");
 		
 		layers = new ArrayList<Neuron[]>();
-		
-		layers.add(new Neuron[] {new Neuron("x₁", null), new Neuron("x₂", null)});
-		layers.add(new Neuron[] {new Neuron("h₁", null), new Neuron("h₂", null), new Neuron("h₃", null), new Neuron("h₄", null)});
-		layers.add(new Neuron[] {new Neuron("y", null)});
+
+		layers.add(new Neuron[] {new Neuron("Capacitance", null), new Neuron("# Resistors", null)});
+		//layers.add(new Neuron[] {new Neuron("x₁", null), new Neuron("x₂", null)});
+		layers.add(new Neuron[] {new Neuron("h₁", null), new Neuron("h₂", null), new Neuron("h₃", null), new Neuron("h₄", null), new Neuron("h₅", null)});
+		layers.add(new Neuron[] {new Neuron("h₁", null), new Neuron("h₂", null), new Neuron("h₃", null), new Neuron("h₄", null), new Neuron("h₅", null)});
+		layers.add(new Neuron[] {new Neuron("h₁", null), new Neuron("h₂", null), new Neuron("h₃", null), new Neuron("h₄", null), new Neuron("h₅", null)});
+		layers.add(new Neuron[] {new Neuron("Time", null)});
 		
 		int width = 1000;
 		int height = 500;

@@ -1,3 +1,4 @@
+# Rewritten using KERAS for maximum simplicity
 import csv
 import numpy
 from keras.models import Sequential
@@ -22,7 +23,7 @@ print x
 model = Sequential()
 model.add(Dense(2, activation='tanh', input_dim=2))
 model.add(Dense(5, activation='tanh'))
-model.add(Dense(10, activation='tanh'))
+model.add(Dense(5, activation='tanh'))
 model.add(Dense(5, activation='tanh'))
 model.add(Dense(1, activation='linear'))
 
